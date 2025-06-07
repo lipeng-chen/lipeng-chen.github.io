@@ -22,7 +22,7 @@ repository               : "lipeng-chen/lipeng-chen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "lipeng.jpg"
   name             : "Lipeng Chen"
   pronouns         : # "he/him"  
   bio              : "Roboticist, Associate Professor"
