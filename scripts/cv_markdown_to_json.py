@@ -96,10 +96,17 @@ def extract_author_info(config):
         if author.get('location'):
             author_info['location']['city'] = author.get('location', '')
         
-        # Add employer as part of summary
-        if author.get('employer'):
-            author_info['summary'] = f"Currently employed at {author.get('employer')}"
+        # # Add employer as part of summary
+        # if author.get('employer'):
+        #     author_info['summary'] = f"Currently employed at {author.get('employer')}"
         
+        if author.get('employer'):
+            profiles.append({
+                "network": "SAI, SJTU",
+                "username": "",
+                "url": author.get('employer')
+            })
+
         # Add bio to summary if available
         if author.get('bio'):
             if author_info['summary']:
