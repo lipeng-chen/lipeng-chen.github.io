@@ -12,10 +12,13 @@ This is the front page of a website that is powered by the [Academic Pages templ
 We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who have a strong interest and passion in robotics and AI ([more details]()). Feel free to drop me an email.
 
 ## Research Interests
- 
-- **Robot Grasping, Manipulation:** image recognition, image generation, video captioning
-- **Motion Planning and Control:** meta-learning, incremental learning, transfer learning
-- **Human-Robot Interaction, Collaboration** meta-learning, incremental learning, transfer learning
+
+My research focuses at the intersection of ...... and robotics, particularly the following areas:
+
+- **Robot Perception:** computer vision, 6D pose estimation, tactile sensing
+- **Robot Grasping, Manipulation:** grasp/manipulation planning, dexterous manipulation, deformable manipulation, etc.
+- **Motion Planning and Control:** whole-body control, legged locomotion, loco-manipulation, etc.
+- **Human-Robot Interaction, Collaboration:** human modeling, etc.  
 
 News
 ======
