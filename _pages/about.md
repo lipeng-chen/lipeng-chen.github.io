@@ -13,8 +13,16 @@ This is the front page of a website that is powered by the [Academic Pages templ
 Research Interests
 ======
 
-- **Grasping and Dexterous Manipulation:** image recognition, image generation, video captioning
+- **Robot Grasping, Manipulation:** image recognition, image generation, video captioning
 - **Motion Planning and Control:** meta-learning, incremental learning, transfer learning
+- **Human-Robot Interaction, Collaboration** meta-learning, incremental learning, transfer learning
+
+
+## Research Interests
+
+- **Robot Grasping, Manipulation:** image recognition, image generation, video captioning
+- **Motion Planning and Control:** meta-learning, incremental learning, transfer learning
+- **Human-Robot Interaction, Collaboration** meta-learning, incremental learning, transfer learning
 
 
 News
