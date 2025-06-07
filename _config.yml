@@ -24,10 +24,10 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Lipeng Chen"
-  pronouns         : "he/him"  
+  pronouns         : # "he/him"  
   bio              : "Roboticist, Associate Professor"
   location         : "Shanghai, China"
-  employer         : "Shanghai Jiao Tong University (SJTU)"
+  employer         : "Shanghai Jiao Tong University"
   uri              : # URL
   email            : "lipeng.chen@sjtu.edu.cn" 
 
@@ -89,7 +89,7 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "foo-bar-identity-th.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
