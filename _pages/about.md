@@ -16,8 +16,8 @@ We are looking for talented PhD/master students, research assistants, interns, p
 My research focuses at the intersection of ...... and robotics, particularly the following areas:
 
 - **Robot Perception:** 6D pose estimation and tracking, tactile sensing
-- **Robot Grasping, Manipulation:** grasp/manipulation planning, dexterous manipulation, deformable manipulation, etc.
-- **Motion Planning and Control:** whole-body control, legged locomotion, loco-manipulation, etc.
+- **Grasp & Manipulation:** Grasping, dexterous manipulation, non-prehensile manipulaiton, deformable manipulation, etc.
+- **Motion Planning & Control:** Whole-body control, legged locomotion, loco-manipulation, etc.
 - **Human-Robot Interaction, Collaboration:** human modeling, etc.  
 
 News
