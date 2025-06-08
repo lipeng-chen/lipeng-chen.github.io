@@ -7,12 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh.
+I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh. Before that, 
 I received my PhD degree from the Robotic Manipulation Lab, University of Leeds, advised by Prof. [Mehmet Dogar](https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar) and Prof. [Anthony Cohn](https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp). 
 
-My research focuses on the principles behind dexterous movement and control in robots and humans, particularly in continuous interactions. This spans multi-modal perception, redundancy resolution, stochastic optimal control, and dynamics model learning, and has been applied to dexterous manipulation, legged locomotion, and compliant human-robot collaboraiton. My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks.
+My research focuses on the principles behind dexterous movement and control in robots and humans, particularly in continuous interactions. This spans multi-modal perception, ... planning, stochastic optimal control, and dynamics model learning, and their applications in grasping and dexterous manipulation, legged locomotion, and compliant human-robot collaboraiton. 
 
-
+<!-- My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks. -->
 
 **Join us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who have a strong interest and passion in robotics and embodied intelligence ([more details]()). If you are interested in working with us, please feel free to drop me an email.
 
