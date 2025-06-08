@@ -32,8 +32,8 @@ My research focuses at the intersection of embodied intelligence and robotics, p
 News
 ======
 
-<!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore! -->
+<!-- <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020. -->
+- **[May. 2025]** One paper is accepted by Science Advances -->
 
 
 <!-- Getting started
