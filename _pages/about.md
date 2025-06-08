@@ -7,12 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU).
-Previously, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/). Prior to that, I was a research associate advised by [Michael Mistry](http://homepages.inf.ed.ac.uk/mmistry/#projects) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh.
-
+I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh.
 I received my PhD degree from the Robotic Manipulation Lab, University of Leeds, advised by Prof. [Mehmet Dogar](https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar) and Prof. [Anthony Cohn](https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp). 
 
- I received my PhD degree from the Nanyang Technological University. I have been focusing on tackling large-scale decision making problems in robotics that involve complex environments, uncertainties and long-term planning. My research interests include robot motion planning, decision making, robot learning, parallel computing, and their applications to autonomous driving in crowded environments. My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks. Please see this video for a 3-min introduction of my recent research, or see my research statement and CV for details.
+My research focuses on the principles behind dexterous movement and control in robots and humans, particularly in continuous interactions. This spans multi-modal perception, redundancy resolution, stochastic optimal control, and dynamics model learning, and has been applied to dexterous manipulation, legged locomotion, and compliant human-robot collaboraiton. My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks.
+
+
 
 **Join us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who have a strong interest and passion in robotics and embodied intelligence ([more details]()). If you are interested in working with us, please feel free to drop me an email.
 
