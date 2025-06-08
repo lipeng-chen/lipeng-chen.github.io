@@ -41,7 +41,7 @@ author:
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -89,7 +89,7 @@ publication_category:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   : "foo-bar-identity-th.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
