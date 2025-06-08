@@ -33,7 +33,7 @@ News
 ======
 
 <!-- <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020. -->
-- **[May. 2025]** One paper is accepted by Science Advances -->
+- **[May. 2025]** One paper on tactile sensing is accepted by Science Advances.
 
 
 <!-- Getting started
