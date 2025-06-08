@@ -24,10 +24,10 @@ I envision a future where robots ​​possess​​ robust dexterity and physic
 
 My research focuses at the intersection of embodied intelligence and robotics, particularly the following areas:
 
-- **Robot Perception:** 6D pose estimation and tracking, tactile sensing
+- **Robot Perception:** pose estimation and tracking, tactile sensing
 - **Grasp and Manipulation:** grasping, dexterous manipulation, non-prehensile manipulaiton, deformable manipulation, etc.
 - **Locomotion:** dynamics and model-based control, legged locomotion, loco-manipulation, etc.
-- **Human-Robot Interaction, Collaboration:** human modeling, etc.  
+- **Human-Centered Robots:** human modeling, human-robot interaction/collaboration.  
 
 News
 ======
