@@ -1,0 +1,16 @@
+<div class="publications-toolbar">
+    <div class="search-box">
+      <input type="text" id="publication-filter" 
+             placeholder="Search publications...">
+      <i class="fas fa-search"></i>
+    </div>
+    
+    <div class="year-filters">
+      <span>Filter by year:</span>
+      {% assign years = site.publications | map: 'year' | uniq | sort | reverse %}
+      {% for year in years %}
+        <button class="year-btn" data-year="{{ year }}">{{ year }}</button>
+      {% endfor %}
+      <button class="year-btn active" data-year="all">All</button>
+    </div>
+  </div>
