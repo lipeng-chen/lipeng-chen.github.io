@@ -1,29 +1,33 @@
 ---
-layout: papers
-title:  "Subcellular electrical stimulation of neurons enhances the myelination of axons by oligodendrocytes"
-collection: publications
-category: manuscripts
-date:   2017-07-03
-image: /images/2017-subcellular.png
-venue: "PLOS One"
-authors: "Hae Ung Lee, Agata Blasiak, <strong>Devansh Agrawal</strong>, Daniel Teh Boon Loong, Nitish V. Thakor, Angelo H. All, John S. Ho, In Hong Yang"
-link: https://doi.org/10.1371/journal.pone.0179642
-arxiv:
-code:
-abstract: "Myelin formation has been identified as a modulator of neural plasticity. New tools are required to investigate the mechanisms by which environmental inputs and neural activity regulate myelination patterns. In this study, we demonstrate a microfluidic compartmentalized culture system with integrated electrical stimulation capabilities that can induce neural activity by whole cell and focal stimulation. A set of electric field simulations was performed to confirm spatial restriction of the electrical input in the compartmentalized culture system. We further demonstrate that electrode localization is a key consideration for generating uniform the stimulation of neuron and oligodendrocytes within the compartments. Using three configurations of the electrodes we tested the effects of subcellular activation of neural activity on distal axon myelination with oligodendrocytes. We further investigated if oligodendrocytes have to be exposed to the electrical field to induce axon myelination. An isolated stimulation of cell bodies and proximal axons had the same effect as an isolated stimulation of distal axons co-cultured with oligodendrocytes, and the two modes had a non-different result than whole cell stimulation. Our platform enabled the demonstration that electrical stimulation enhances oligodendrocyte maturation and myelin formation independent of the input localization and oligodendrocyte exposure to the electrical field."
-pdf: /pdfs/2017-subcellular.pdf
-bib: |-
-  @article{10.1371/journal.pone.0179642,
-    author = {Lee, Hae Ung AND Blasiak, Agata AND Agrawal, Devansh R. AND Loong, Daniel Teh Boon AND Thakor, Nitish V. AND All, Angelo H. AND Ho, John S. AND Yang, In Hong},
-    journal = {PLOS ONE},
-    publisher = {Public Library of Science},
-    title = {Subcellular electrical stimulation of neurons enhances the myelination of axons by oligodendrocytes},
-    year = {2017},
-    month = {07},
-    volume = {12},
-    url = {https://doi.org/10.1371/journal.pone.0179642},
-    pages = {1-17},
-    number = {7},
-    doi = {10.1371/journal.pone.0179642}
+title: "Gatekeeper: Online Safety Verification and Control for Nonlinear Systems in Dynamic Environments"
+authors: "Devansh Agrawal, Ruichang Chen, Dimitra Panagou"
+venue: "IEEE Transactions on Robotics"
+year: 2024
+volume: ""
+number: ""
+pages: "1-17"
+doi: "10.1109/TRO.2024.3454415"
+pdf: "gatekeeper2024.pdf"
+abstract: "This paper presents the gatekeeper algorithm, a real-time and computationally-lightweight method that ensures that trajectories of a nonlinear system satisfy safety constraints despite sensing limitations. Gatekeeper integrates with existing path planners and feedback controllers by introducing an additional verification step to ensure that proposed trajectories can be executed safely, despite nonlinear dynamics subject to bounded disturbances, input constraints and partial knowledge of the environment. Our key contributions include: (A) an algorithm to recursively construct safe trajectories by numerical forward propagation, and (B) a proof that tracking such trajectories ensures system safety beyond the finite horizon. We demonstrate the method in simulations and physical experiments with quadrotors navigating dynamic obstacle environments."
+bibtex: |
+  @ARTICLE{10665919,
+    author={Agrawal, Devansh Ramgopal and Chen, Ruichang and Panagou, Dimitra},
+    journal={IEEE Transactions on Robotics}, 
+    title={Gatekeeper: Online Safety Verification and Control for Nonlinear Systems in Dynamic Environments}, 
+    year={2024},
+    volume={},
+    number={},
+    pages={1-17},
+    doi={10.1109/TRO.2024.3454415},
+    keywords={Trajectory;Safety;Robots;Logic gates;Robot sensing systems;Nonlinear dynamical systems;Quadrotors;Collision Avoidance;Motion and Path Planning;Aerial Systems: Applications;Safety-Critical Control}
   }
+tags:
+  - Safety-Critical Control
+  - Motion Planning
+  - Quadrotors
+  - Nonlinear Systems
+  - Formal Verification
+code: "https://github.com/agrawaldevansh/gatekeeper"
+video: "https://youtube.com/watch?v=gatekeeper_demo"
+award: "Best Paper Finalist, IROS 2023"
 ---
