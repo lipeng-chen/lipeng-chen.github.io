@@ -18,7 +18,7 @@ I envision a future where robots ​​possess​​ robust dexterity and physic
 
 <!-- My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks. -->
 
-**Join us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who have a strong interest and passion in robotics and embodied intelligence ([more details]()). If you are interested in working with us, please feel free to drop me an email.
+**Join us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who share similar interest and passion in robotics and embodied intelligence ([more details]()). If you are interested in working with us, please feel free to drop me an email.
 
 ## Research Interests
 
