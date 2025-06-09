@@ -1,43 +1,56 @@
 <!-- _includes/publication.html -->
-<div class="publication-item">
-    <h3 class="publication-title">
+<div class="publication-entry">
+  <h3 class="publication-title">
+    {% if entry.url %}
       <a href="{{ base_path }}{{ entry.url }}" rel="permalink">{{ entry.title }}</a>
-      {% if entry.pdf %}
-        <a href="{{ entry.pdf | prepend: '/files/' | relative_url }}" target="_blank" class="pdf-link" title="Download PDF">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      {% endif %}
-    </h3>
-    
-    <div class="publication-authors">{{ entry.authors | markdownify | remove: '<p>' | remove: '</p>' }}</div>
-    
-    <div class="publication-details">
-      <em>{{ entry.venue }}</em>, 
-      {{ entry.year }}
-      {% if entry.pages %} | pp. {{ entry.pages }}{% endif %}
-      {% if entry.doi %} | DOI: <a href="https://doi.org/{{ entry.doi }}" target="_blank">{{ entry.doi }}</a>{% endif %}
-    </div>
-    
-    {% if entry.abstract %}
-    <div class="publication-abstract">
-      <strong>Abstract:</strong> {{ entry.abstract | markdownify | remove: '<p>' | remove: '</p>' }}
-    </div>
+    {% else %}
+      {{ entry.title }}
     {% endif %}
     
-    {% if entry.tags %}
-    <div class="publication-tags">
-      {% for tag in entry.tags %}
-        <span class="tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
+    {% if entry.pdf %}
+      <a href="{{ entry.pdf | prepend: '/files/' | relative_url }}" 
+         target="_blank" 
+         class="pdf-link" 
+         title="Download PDF">
+        <i class="fas fa-file-pdf"></i>
+      </a>
     {% endif %}
-    
-    {% if entry.bibtex %}
-    <div class="publication-bibtex">
-      <details>
-        <summary>BibTeX</summary>
-        <pre>{{ entry.bibtex }}</pre>
-      </details>
-    </div>
+  </h3>
+  
+  <!-- 修复作者信息显示 -->
+  <div class="publication-authors">
+    {{ entry.authors | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div>
+  
+  <div class="publication-details">
+    <em>{{ entry.venue }}</em>, {{ entry.year }}
+    {% if entry.pages and entry.pages != "" %} | pp. {{ entry.pages }}{% endif %}
+    {% if entry.doi and entry.doi != "" %} | 
+      DOI: <a href="https://doi.org/{{ entry.doi }}" target="_blank">{{ entry.doi }}</a>
     {% endif %}
   </div>
+  
+  {% if entry.abstract and entry.abstract != "" %}
+  <div class="publication-abstract">
+    <strong>Abstract:</strong> 
+    {{ entry.abstract | markdownify | remove: '<p>' | remove: '</p>' }}
+  </div>
+  {% endif %}
+  
+  {% if entry.tags and entry.tags.size > 0 %}
+  <div class="publication-tags">
+    {% for tag in entry.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if entry.bibtex and entry.bibtex != "" %}
+  <div class="publication-bibtex">
+    <details>
+      <summary>BibTeX</summary>
+      <pre><code>{{ entry.bibtex }}</code></pre>
+    </details>
+  </div>
+  {% endif %}
+</div>
