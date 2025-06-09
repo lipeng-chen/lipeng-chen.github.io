@@ -24,15 +24,15 @@ layout: default
     
     {{ content }}
     
-    {% if page_class == "page-publications" %}
+    <!-- {% if page_class == "page-publications" %}
       {% include publications_filters.html %}
-    {% endif %}
+    {% endif %} -->
   </div>
 </div>
 
-{% if page_class == "page-publications" %}
+<!-- {% if page_class == "page-publications" %} -->
   <!-- 出版物页面专属脚本 -->
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       // 出版物搜索和过滤功能
       const filterInput = document.getElementById('publication-filter');
@@ -42,5 +42,5 @@ layout: default
         });
       }
     });
-  </script>
+  </script> -->
 {% endif %}

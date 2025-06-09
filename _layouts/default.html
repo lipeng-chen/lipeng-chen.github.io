@@ -1,5 +1,5 @@
 ---
-layout: compress  # 保留压缩，但添加安全处理
+layout: compress
 ---
 
 {% include base_path %}
@@ -9,25 +9,14 @@ layout: compress  # 保留压缩，但添加安全处理
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-    
-    <!-- 添加出版物页面专属样式 -->
-    {% if page.class contains "page-publications" %}
-      <style>
-        :root {
-          --publication-primary: #2c5282;
-        }
-      </style>
-    {% endif %}
   </head>
 
   <body>
+
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <!-- 添加主要内容容器 -->
-    <main id="content" role="main">
-      {{ content }}
-    </main>
+    {{ content }}
 
     <div class="page__footer">
       <footer>
@@ -37,16 +26,6 @@ layout: compress  # 保留压缩，但添加安全处理
     </div>
 
     {% include scripts.html %}
-    
-    <!-- 添加页面专属脚本 -->
-    {% if page.class contains "page-publications" %}
-      <script>
-        // 确保在DOM加载后执行
-        document.addEventListener('DOMContentLoaded', function() {
-          console.log('Publications page loaded');
-          // 后续添加功能
-        });
-      </script>
-    {% endif %}
+
   </body>
 </html>

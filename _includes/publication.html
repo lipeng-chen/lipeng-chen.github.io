@@ -7,14 +7,52 @@
       {{ entry.title }}
     {% endif %}
     
-    {% if entry.pdf %}
-      <a href="{{ entry.pdf | prepend: '/files/' | relative_url }}" 
-         target="_blank" 
-         class="pdf-link" 
-         title="Download PDF">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-    {% endif %}
+    <!-- 资源链接图标 - 标题后置 -->
+    <span class="title-resources">
+      {% if entry.pdf %}
+        <a href="{{ entry.pdf | prepend: '/files/' | relative_url }}" 
+           target="_blank" 
+           class="resource-icon pdf-icon" >
+          <i class="fas fa-file-pdf"></i>
+        </a>
+      {% endif %}
+      
+      {% if entry.video %}
+        <a href="{{ entry.video }}" 
+           target="_blank" 
+           class="resource-icon video-icon" 
+           title="View Video">
+          <i class="fas fa-video"></i>
+        </a>
+      {% endif %}
+      
+      {% if entry.code %}
+        <a href="{{ entry.code }}" 
+           target="_blank" 
+           class="resource-icon code-icon" 
+           title="View Code">
+          <i class="fab fa-github"></i>
+        </a>
+      {% endif %}
+      
+      {% if entry.data %}
+        <a href="{{ entry.data }}" 
+           target="_blank" 
+           class="resource-icon data-icon" 
+           title="View Data">
+          <i class="fas fa-database"></i>
+        </a>
+      {% endif %}
+      
+      {% if entry.slides %}
+        <a href="{{ entry.slides }}" 
+           target="_blank" 
+           class="resource-icon slides-icon" 
+           title="View Slides">
+          <i class="fas fa-presentation-screen"></i>
+        </a>
+      {% endif %}
+    </span>
   </h3>
   
   <!-- 修复作者信息显示 -->

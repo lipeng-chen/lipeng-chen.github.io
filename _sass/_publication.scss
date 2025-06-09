@@ -1,13 +1,39 @@
 .page-publications {
   .publications-toolbar {
     margin: 2rem 0;
-    padding: 1rem;
-    background: #f8f9fa;
-    border-radius: 8px;
+    padding: 1.2rem;
+    background: linear-gradient(to right, #f8f9fa, #f0f7ff);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+    
+    .toolbar-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      
+      &:not(:last-child) {
+        padding-right: 1.5rem;
+        border-right: 1px solid #e2e8f0;
+      }
+      
+      .section-label {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+    }
     
     .search-box {
       flex: 1;
@@ -16,11 +42,124 @@
       
       input {
         width: 100%;
-        padding: 0.8rem 1rem 0.8rem 40px;
+        padding: 0.85rem 1.2rem 0.85rem 46px;
         border: 1px solid #e2e8f0;
-        border-radius: 30px;
+        border-radius: 50px;
         font-size: 1rem;
         transition: all 0.3s;
+        background-color: white;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        
+        &:focus {
+          outline: none;
+          border-color: #4299e1;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2), 
+                      inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        &::placeholder {
+          color: #a0aec0;
+        }
+      }
+      
+      .fa-search {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a0aec0;
+        font-size: 1.1rem;
+        transition: color 0.2s;
+      }
+      
+      &:hover .fa-search {
+        color: #4299e1;
+      }
+    }
+    
+    .year-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      
+      .year-btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 50px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        min-width: 60px;
+        text-align: center;
+        
+        &.active, &:hover {
+          background: #4299e1;
+          color: white;
+          border-color: #4299e1;
+          box-shadow: 0 2px 5px rgba(66, 153, 225, 0.3);
+        }
+        
+        &.all-years {
+          background-color: #f0f7ff;
+          border-color: #c3dafe;
+          color: #2b6cb0;
+          font-weight: 500;
+          
+          &.active, &:hover {
+            background: #2b6cb0;
+            color: white;
+            border-color: #2b6cb0;
+          }
+        }
+      }
+    }
+    
+    .view-toggle {
+      display: flex;
+      gap: 0.5rem;
+      
+      .view-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: #4a5568;
+        
+        &.active, &:hover {
+          background: #4299e1;
+          color: white;
+          border-color: #4299e1;
+        }
+        
+        i {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    
+    .sort-options {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      
+      select {
+        padding: 0.7rem 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        background: white;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        min-width: 140px;
         
         &:focus {
           outline: none;
@@ -28,46 +167,86 @@
           box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
         }
       }
-      
-      .fa-search {
-        position: absolute;
-        left: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #a0aec0;
-      }
     }
     
-    .year-filters {
+    .stats-badge {
+      padding: 0.5rem 1rem;
+      background: #f0f7ff;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: #2b6cb0;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
       align-items: center;
+      gap: 0.5rem;
+      border: 1px solid #c3dafe;
       
-      span {
+      .count {
         font-weight: 600;
-        margin-right: 0.5rem;
       }
+    }
+  }
+  
+  // 响应式设计
+  @media (max-width: 992px) {
+    .publications-toolbar {
+      gap: 1.2rem;
       
-      .year-btn {
-        padding: 0.4rem 0.8rem;
-        border: 1px solid #e2e8f0;
-        border-radius: 20px;
-        background: #fff;
-        cursor: pointer;
-        font-size: 0.9rem;
-        transition: all 0.2s;
-        
-        &.active, &:hover {
-          background: #4299e1;
-          color: white;
-          border-color: #4299e1;
+      .toolbar-section {
+        &:not(:last-child) {
+          padding-right: 1rem;
         }
       }
     }
   }
+  
+  @media (max-width: 768px) {
+    .publications-toolbar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      
+      .toolbar-section {
+        width: 100%;
+        padding-right: 0 !important;
+        border-right: none !important;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid #e2e8f0;
+        
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+      
+      .search-box {
+        min-width: 100%;
+      }
+      
+      .year-filters {
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .publications-toolbar {
+      .year-filters {
+        .year-btn {
+          padding: 0.4rem 0.8rem;
+          min-width: 50px;
+          font-size: 0.85rem;
+        }
+      }
+      
+      .sort-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  }
 }
-
 
 // .publication-item {
 //   margin-bottom: 2.5rem;

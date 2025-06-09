@@ -103,6 +103,10 @@
 <meta name="theme-color" content="#ffffff"/>
 <link rel="stylesheet" href="http://localhost:4001/assets/css/academicons.css"/>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -110,18 +114,10 @@
 
 <!-- end custom head snippets -->
 
-    
-    <!-- 添加出版物页面专属样式 -->
-    
-      <style>
-        :root {
-          --publication-primary: #2c5282;
-        }
-      </style>
-    
   </head>
 
   <body>
+
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
 <![endif]-->
@@ -163,9 +159,7 @@
   </div>
 </div>
 
-    <!-- 添加主要内容容器 -->
-    <main id="content" role="main">
-      
+    
 
 
 
@@ -304,30 +298,75 @@
 <div class="wordwrap">You can also find a full list of my publications on <a href="https://scholar.google.com/citations?user=PS_CX0AAAAAJ">my Google Scholar profile</a>.</div>
 
 <div class="publications-page">
-
-  
   <!-- 出版物列表 -->
   <div class="publications-list">
+    
+      <section class="publication-item" data-year="2024">
+        <h3 class="publication-title">
+          Multi-Modal Perception for Autonomous Navigation in Urban Environments
+          <span class="title-resources">
+            
+              <a href="/files/chen2024_multi_modal.pdf" target="_blank" class="pdf-link" title="Download PDF">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            
+            
+              <a href="https://github.com/lipeng-chen/multi-modal-perception" target="_blank" class="resource-icon code-icon" title="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            
+            
+              <a href="https://youtube.com/watch?v=multi-modal-demo" target="_blank" class="resource-icon video-icon" title="View Video">
+                <i class="fas fa-video"></i>
+              </a>
+            
+          </span>
+        </h3>
+      <div class="publication-meta">
+        <div class="publication-authors">
+          <strong>Lipeng Chen</strong>, Wei Zhang, <strong>Hao Wang</strong>, <em>et al.</em>
+
+        </div>
+        <div class="publication-details">
+          <em>IEEE Transactions on Intelligent Transportation Systems</em>, 2024
+           | pp. 1-15
+           | DOI: <a href="https://doi.org/10.1109/TITS.2024.1234567" target="_blank">10.1109/TITS.2024.1234567</a>
+        </div>
+      </div>
+      </section>
     
       <section class="publication-item" data-year="2023">
         <h3 class="publication-title">
           Robust Control of Autonomous Underwater Vehicles in Dynamic Ocean Environments
-          
-            <a href="/files/chen2023_robust_control.pdf" target="_blank" class="pdf-link" title="Download PDF">
-              <i class="fas fa-file-pdf"></i>
-            </a>
-          
+          <span class="title-resources">
+            
+              <a href="/files/chen2023_robust_control.pdf" target="_blank" class="pdf-link" title="Download PDF">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            
+            
+              <a href="https://github.com/lipeng-chen/auv-control" target="_blank" class="resource-icon code-icon" title="View Code">
+                <i class="fab fa-github"></i>
+              </a>
+            
+            
+              <a href="https://youtube.com/watch?v=auv-control-demo" target="_blank" class="resource-icon video-icon" title="View Video">
+                <i class="fas fa-video"></i>
+              </a>
+            
+          </span>
         </h3>
-        
-        <div class="publication-meta">
-          <div class="publication-authors">**Lipeng Chen**, Jane Smith, Alan Turing, *et al.*  
-</div>
-          <div class="publication-details">
-            <em>IEEE Transactions on Robotics (T-RO)</em>, 2023
-             | pp. 123-135
-             | DOI: <a href="https://doi.org/10.1109/TRO.2023.1234567" target="_blank">10.1109/TRO.2023.1234567</a>
-          </div>
+      <div class="publication-meta">
+        <div class="publication-authors">
+          <strong>Lipeng Chen</strong>, Jane Smith, Alan Turing, <em>et al.</em>
+
         </div>
+        <div class="publication-details">
+          <em>IEEE Transactions on Robotics (T-RO)</em>, 2023
+           | pp. 123-135
+           | DOI: <a href="https://doi.org/10.1109/TRO.2023.1234567" target="_blank">10.1109/TRO.2023.1234567</a>
+        </div>
+      </div>
       </section>
     
   </div>
@@ -335,12 +374,12 @@
 
 <!-- 添加调试信息 -->
 <script>
-console.log('Publications count:', 1);
+console.log('Publications count:', 2);
 </script>
 
 
     
-    
+    <!-- 
       <div class="publications-toolbar">
     <div class="search-box">
       <input type="text" id="publication-filter" 
@@ -352,18 +391,20 @@ console.log('Publications count:', 1);
       <span>Filter by year:</span>
       
       
+        <button class="year-btn" data-year="2024">2024</button>
+      
         <button class="year-btn" data-year="2023">2023</button>
       
       <button class="year-btn active" data-year="all">All</button>
     </div>
   </div>
-    
+     -->
   </div>
 </div>
 
-
+<!--  -->
   <!-- 出版物页面专属脚本 -->
-  <script>
+  <!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
       // 出版物搜索和过滤功能
       const filterInput = document.getElementById('publication-filter');
@@ -373,9 +414,8 @@ console.log('Publications count:', 1);
         });
       }
     });
-  </script>
+  </script> -->
 
-    </main>
 
     <div class="page__footer">
       <footer>
@@ -425,16 +465,7 @@ console.log('Publications count:', 1);
 
 
 
-    
-    <!-- 添加页面专属脚本 -->
-    
-      <script>
-        // 确保在DOM加载后执行
-        document.addEventListener('DOMContentLoaded', function() {
-          console.log('Publications page loaded');
-          // 后续添加功能
-        });
-      </script>
-    
+
   </body>
 </html>
+
