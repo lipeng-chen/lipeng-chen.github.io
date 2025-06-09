@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh. 
+I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh. Before that, 
 I received my PhD degree from the Robotic Manipulation Lab, University of Leeds, advised by Prof. [Mehmet Dogar](https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar) and Prof. [Anthony Cohn](https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp). 
 
 
