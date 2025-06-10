@@ -82,12 +82,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  locomotion:
-    title: 'Locomotion'
   manipulation:
-    title: 'Manipulation'    
+    title: 'Grasping, Manipulation'    
   hrc:
-    title: 'Human-Robot Interaction'
+    title: 'Human-Robot Interaction, Collaboration'
+  locomotion:
+    title: 'Locomotion, Navigation'
 
 # Site Settings
 teaser                   : "500x300.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

@@ -361,8 +361,8 @@ document.addEventListener('DOMContentLoaded', function() {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   color: white !important;
   font-size: 0.9rem;
