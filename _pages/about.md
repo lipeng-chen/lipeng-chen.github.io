@@ -13,6 +13,8 @@ I received my PhD degree from the Robotic Manipulation Lab, University of Leeds,
 
 My long-term goal is to develop robots endowed with robust physical intelligence and dexterity, enabling them to reliably perform complex real-world tasks—both autonomously and in seamless collaboration with humans. To this end, my research focuses on the principles governing dexterous movement and control in robots and humans, particularly in continuous interactions​​. This encompasses multiple ​​key topics including​ multi-modal perception, high-dimensional motion planning, stochastic optimal control, dynamics model learning, and their applications in​​ robotic grasping, dexterous manipulation, multi-contact legged locomotion, and compliant human-robot collaboration.
 
+<!-- bundle exec jekyll serve --port 4001 -->
+
 <!-- / 或者更强的科研愿景： 
 I envision a future where robots ​​possess​​ robust dexterity and physical intelligence, ​​allowing them to seamlessly deploy​​ alongside humans in unstructured environments and ​​dependably perform​​ complex, physically interactive tasks. -->
 

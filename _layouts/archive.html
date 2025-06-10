@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% assign page_class = page.class | default: layout.class | default: "" %}
-
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
@@ -12,35 +10,15 @@ layout: default
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}
-{% endif %}
+{% endif %}c
 
-<div id="main" role="main" class="{{ page_class }}">
+<div id="main" role="main">
   {% include sidebar.html %}
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title">{{ page.title }}</h1>
+      <h1 class="page__title">{{ page.title }}</h1>
     {% endunless %}
-    
     {{ content }}
-    
-    <!-- {% if page_class == "page-publications" %}
-      {% include publications_filters.html %}
-    {% endif %} -->
   </div>
 </div>
-
-<!-- {% if page_class == "page-publications" %} -->
-  <!-- 出版物页面专属脚本 -->
-  <!-- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 出版物搜索和过滤功能
-      const filterInput = document.getElementById('publication-filter');
-      if (filterInput) {
-        filterInput.addEventListener('input', function() {
-          // 过滤功能实现
-        });
-      }
-    });
-  </script> -->
-{% endif %}

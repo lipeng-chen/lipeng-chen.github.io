@@ -3,6 +3,7 @@ title: "Robust Control of Autonomous Underwater Vehicles in Dynamic Ocean Enviro
 authors: |
   **Lipeng Chen**, Jane Smith, Alan Turing, *et al.*  
 venue: "IEEE Transactions on Robotics (T-RO)"
+category: "manipulation"
 year: 2023
 pages: "123-135"
 doi: "10.1109/TRO.2023.1234567"
