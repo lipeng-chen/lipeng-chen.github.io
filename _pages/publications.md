@@ -25,7 +25,7 @@ class: page-publications
     <div class="publication-category" id="category-{{ category_id }}">
       <h2 class="category-title">
         {{ group.name | default: "Other Publications" }}
-        <span class="publication-count">({{ group.size }})</span>
+        <!-- <span class="publication-count">({{ group.size }})</span> -->
       </h2>
       
       <div class="publications-list">
@@ -103,7 +103,7 @@ class: page-publications
 </div>
 
 <!-- 分类过滤器和搜索框 -->
-<div class="publications-toolbar">
+<!-- <div class="publications-toolbar">
   <div class="search-box">
     <i class="fas fa-search"></i>
     <input type="text" id="publication-search" placeholder="Search publications...">
@@ -118,10 +118,10 @@ class: page-publications
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- 分类和搜索功能脚本 -->
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', function() {
   // 分类过滤功能
   const categoryButtons = document.querySelectorAll('.category-btn');
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // 初始显示所有出版物
   publicationItems.forEach(item => item.style.display = 'block');
 });
-</script>
+</script> -->
 
 <style>
 /* ================= 分类工具栏 ================= */
