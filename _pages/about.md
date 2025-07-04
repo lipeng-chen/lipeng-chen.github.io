@@ -1,21 +1,47 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Lipeng Chen"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am currently a tenure-track associate professor in the [School of Artificial Intelligence (SAI)](https://soai.sjtu.edu.cn/), Shanghai Jiao Tong University (SJTU). Prior to this, I was a senior research scientist at the [Tencent Robotics X](https://roboticsx.tencent.com/#/), and a research associate advised by [Michael Mistry](https://homepages.inf.ed.ac.uk/mmistry/index.html) at the [Edinburgh Centre for Robotics](https://www.edinburgh-robotics.org/), University of Edinburgh. Before that, 
+I received my PhD degree from the Robotic Manipulation Lab, University of Leeds, advised by Prof. [Mehmet Dogar](https://eps.leeds.ac.uk/computing/staff/743/professor-mehmet-dogar) and Prof. [Anthony Cohn](https://eps.leeds.ac.uk/computing/staff/76/professor-anthony-tony-g-cohn-freng-flsw-ceng-citp). 
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+My long-term goal is to develop robots endowed with robust physical intelligence and dexterity, enabling them to reliably perform complex real-world tasks—both autonomously and in seamless collaboration with humans. To this end, my research focuses on the principles governing dexterous movement and control in both robots and humans, particularly in continuous interactions​​. This encompasses multiple ​​key topics including​ multi-modal perception, high-dimensional motion planning, stochastic optimal control, dynamics model learning, and their applications in​​ robotic grasping, dexterous manipulation, multi-contact legged locomotion, and compliant human-robot collaboration.
 
-Getting started
+<!-- bundle exec jekyll serve --port 4001 -->
+
+<!-- / 或者更强的科研愿景： 
+I envision a future where robots ​​possess​​ robust dexterity and physical intelligence, ​​allowing them to seamlessly deploy​​ alongside humans in unstructured environments and ​​dependably perform​​ complex, physically interactive tasks. -->
+
+<!-- My goal is to enable robots to seamlessly interact with humans in crowded, chaotic environments and accomplish complex tasks. -->
+
+**Join Us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who share similar interest and passion in robotics and embodied intelligence. If you are interested in working with us, please feel free to drop me an email.
+
+## Research Interests
+
+My research focuses at the intersection of embodied intelligence and robotics, particularly the following areas:
+
+- **Robot Perception:** pose estimation and tracking, tactile sensing
+- **Grasp and Manipulation:** grasping, dexterous manipulation, non-prehensile manipulaiton, deformable manipulation, etc.
+- **Locomotion:** dynamics and model-based control, legged locomotion, loco-manipulation, etc.
+- **Human-Centered Robots:** human modeling, human-robot interaction, collaborative manipulation.  
+
+## News
+<!-- ====== -->
+
+<!-- <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020. -->
+- **[Jun. 2025]** One paper on telerobotics is accepted by *IEEE RA-L*. 
+- **[Jun. 2025]** One paper is accepted by *IROS 2025*. 
+- **[Jun. 2025]** One paper on [tactile based mobile manipulation](https://ieeexplore.ieee.org/abstract/document/11030660/) is accepted by *IEEE TMECH*. 
+- **[May 2025]** One paper on tactile sensing is accepted by *Science Advances*.
+
+
+<!-- Getting started
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
 1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
@@ -46,4 +72,4 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->

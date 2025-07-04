@@ -1,0 +1,597 @@
+.page-publications {
+  .publications-toolbar {
+    margin: 2rem 0;
+    padding: 1.2rem;
+    background: linear-gradient(to right, #f8f9fa, #f0f7ff);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+    
+    .toolbar-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      
+      &:not(:last-child) {
+        padding-right: 1.5rem;
+        border-right: 1px solid #e2e8f0;
+      }
+      
+      .section-label {
+        font-weight: 600;
+        color: #2d3748;
+        font-size: 0.95rem;
+        white-space: nowrap;
+      }
+    }
+    
+    .search-box {
+      flex: 1;
+      min-width: 250px;
+      position: relative;
+      
+      input {
+        width: 100%;
+        padding: 0.85rem 1.2rem 0.85rem 46px;
+        border: 1px solid #e2e8f0;
+        border-radius: 50px;
+        font-size: 1rem;
+        transition: all 0.3s;
+        background-color: white;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        
+        &:focus {
+          outline: none;
+          border-color: #4299e1;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2), 
+                      inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        &::placeholder {
+          color: #a0aec0;
+        }
+      }
+      
+      .fa-search {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #a0aec0;
+        font-size: 1.1rem;
+        transition: color 0.2s;
+      }
+      
+      &:hover .fa-search {
+        color: #4299e1;
+      }
+    }
+    
+    .year-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+      
+      .year-btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 50px;
+        background: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        min-width: 60px;
+        text-align: center;
+        
+        &.active, &:hover {
+          background: #4299e1;
+          color: white;
+          border-color: #4299e1;
+          box-shadow: 0 2px 5px rgba(66, 153, 225, 0.3);
+        }
+        
+        &.all-years {
+          background-color: #f0f7ff;
+          border-color: #c3dafe;
+          color: #2b6cb0;
+          font-weight: 500;
+          
+          &.active, &:hover {
+            background: #2b6cb0;
+            color: white;
+            border-color: #2b6cb0;
+          }
+        }
+      }
+    }
+    
+    .view-toggle {
+      display: flex;
+      gap: 0.5rem;
+      
+      .view-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: #4a5568;
+        
+        &.active, &:hover {
+          background: #4299e1;
+          color: white;
+          border-color: #4299e1;
+        }
+        
+        i {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    
+    .sort-options {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      
+      select {
+        padding: 0.7rem 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        background: white;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        min-width: 140px;
+        
+        &:focus {
+          outline: none;
+          border-color: #4299e1;
+          box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+        }
+      }
+    }
+    
+    .stats-badge {
+      padding: 0.5rem 1rem;
+      background: #f0f7ff;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: #2b6cb0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid #c3dafe;
+      
+      .count {
+        font-weight: 600;
+      }
+    }
+  }
+  
+  // 响应式设计
+  @media (max-width: 992px) {
+    .publications-toolbar {
+      gap: 1.2rem;
+      
+      .toolbar-section {
+        &:not(:last-child) {
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .publications-toolbar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      
+      .toolbar-section {
+        width: 100%;
+        padding-right: 0 !important;
+        border-right: none !important;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid #e2e8f0;
+        
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+      
+      .search-box {
+        min-width: 100%;
+      }
+      
+      .year-filters {
+        justify-content: center;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .publications-toolbar {
+      .year-filters {
+        .year-btn {
+          padding: 0.4rem 0.8rem;
+          min-width: 50px;
+          font-size: 0.85rem;
+        }
+      }
+      
+      .sort-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+// .publication-item {
+//   margin-bottom: 2.5rem;
+//   padding: 1.5rem;
+//   background-color: #f8f9fa;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+//   transition: transform 0.3s ease;
+  
+//   &:hover {
+//     transform: translateY(-3px);
+//     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+//   }
+// }
+
+// /* 标题样式 */
+// .publication-title {
+//   font-size: 1.3rem;
+//   margin-bottom: 0.8rem;
+  
+//   a {
+//     color: #1a365d;
+//     text-decoration: none;
+//     border-bottom: 2px solid transparent;
+    
+//     &:hover {
+//       color: #2c5282;
+//       border-bottom-color: #2c5282;
+//     }
+//   }
+  
+//   .pdf-link {
+//     margin-left: 10px;
+//     font-size: 0.9em;
+//     color: #c53030;
+    
+//     &:hover {
+//       color: #e53e3e;
+//     }
+//   }
+// }
+
+// /* 作者信息 */
+// .publication-authors {
+//   font-size: 0.95rem;
+//   color: #4a5568;
+//   margin-bottom: 0.5rem;
+// }
+
+// /* 出版物详情 */
+// .publication-details {
+//   font-size: 0.9rem;
+//   color: #718096;
+//   margin-bottom: 1.2rem;
+  
+//   em {
+//     font-style: italic;
+//   }
+  
+//   a {
+//     color: #2b6cb0;
+//     text-decoration: none;
+    
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// }
+
+// /* 摘要样式 */
+// .publication-abstract {
+//   font-size: 0.92rem;
+//   line-height: 1.6;
+//   padding: 1rem;
+//   background: #edf2f7;
+//   border-left: 3px solid #4299e1;
+//   border-radius: 0 4px 4px 0;
+//   margin-bottom: 1.5rem;
+  
+//   strong {
+//     color: #2d3748;
+//   }
+// }
+
+// /* 标签样式 */
+// .publication-tags {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 8px;
+//   margin-bottom: 1.2rem;
+  
+//   .tag {
+//     display: inline-block;
+//     background: #e2e8f0;
+//     color: #2d3748;
+//     padding: 4px 12px;
+//     border-radius: 20px;
+//     font-size: 0.8rem;
+//     transition: all 0.2s;
+    
+//     &:hover {
+//       background: #cbd5e0;
+//       transform: translateY(-2px);
+//     }
+//   }
+// }
+
+// /* BibTeX 样式 */
+// .publication-bibtex {
+//   details {
+//     cursor: pointer;
+//     border: 1px solid #e2e8f0;
+//     border-radius: 6px;
+//     padding: 0.5rem 1rem;
+    
+//     summary {
+//       font-weight: 600;
+//       color: #2b6cb0;
+//       outline: none;
+      
+//       &:hover {
+//         color: #2c5282;
+//       }
+//     }
+    
+//     pre {
+//       margin-top: 0.8rem;
+//       padding: 1rem;
+//       background: #f7fafc;
+//       border: 1px solid #e2e8f0;
+//       border-radius: 6px;
+//       font-size: 0.85rem;
+//       overflow-x: auto;
+//       white-space: pre-wrap;
+//       line-height: 1.4;
+//     }
+//   }
+// }
+
+
+
+// /* 限定在出版物页面 */
+// .page-publications {
+//   .publications-list {
+//     margin-top: 2rem;
+//   }
+  
+//   .publication-item {
+//     margin-bottom: 2.5rem;
+//     padding: 1.8rem;
+//     background-color: #f8f9fa;
+//     border-radius: 8px;
+//     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+//       background-color: #ffffff;
+//     }
+//   }
+  
+//   .publication-title {
+//     font-size: 1.25rem;
+//     margin-bottom: 0.6rem;
+    
+//     a {
+//       color: #1a365d;
+//       text-decoration: none;
+//       border-bottom: 2px solid transparent;
+//       transition: color 0.3s, border-color 0.3s;
+      
+//       &:hover {
+//         color: #2c5282;
+//         border-bottom-color: #2c5282;
+//       }
+//     }
+    
+//     .pdf-link {
+//       margin-left: 10px;
+//       color: #c53030;
+//       font-size: 0.85em;
+//       transition: color 0.3s;
+      
+//       &:hover {
+//         color: #e53e3e;
+//       }
+//     }
+//   }
+  
+//   .publication-authors {
+//     font-size: 0.95rem;
+//     color: #4a5568;
+//     margin-bottom: 0.5rem;
+//     font-style: italic;
+//   }
+  
+//   .publication-details {
+//     font-size: 0.9rem;
+//     color: #718096;
+//     margin-bottom: 1.2rem;
+//     line-height: 1.5;
+    
+//     em {
+//       font-style: italic;
+//       color: #2d3748;
+//     }
+    
+//     a {
+//       color: #2b6cb0;
+//       text-decoration: none;
+//       font-weight: 500;
+      
+//       &:hover {
+//         text-decoration: underline;
+//         color: #2c5282;
+//       }
+//     }
+//   }
+  
+//   .publication-abstract {
+//     font-size: 0.92rem;
+//     line-height: 1.7;
+//     padding: 1.2rem;
+//     background: #edf2f7;
+//     border-left: 3px solid #4299e1;
+//     border-radius: 0 6px 6px 0;
+//     margin-bottom: 1.5rem;
+//     position: relative;
+    
+//     &::before {
+//       content: "“";
+//       position: absolute;
+//       top: -15px;
+//       left: 10px;
+//       font-size: 4rem;
+//       color: rgba(66, 153, 225, 0.15);
+//       font-family: Georgia, serif;
+//     }
+    
+//     strong {
+//       color: #2d3748;
+//       font-weight: 600;
+//     }
+//   }
+  
+//   .publication-tags {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 8px;
+//     margin-bottom: 1.5rem;
+    
+//     .tag {
+//       display: inline-block;
+//       background: #e2e8f0;
+//       color: #2d3748;
+//       padding: 5px 14px;
+//       border-radius: 20px;
+//       font-size: 0.8rem;
+//       font-weight: 500;
+//       transition: all 0.3s ease;
+      
+//       &:hover {
+//         background: #cbd5e0;
+//         transform: translateY(-2px);
+//         box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+//       }
+//     }
+//   }
+  
+//   .publication-bibtex {
+//     margin-top: 1.2rem;
+    
+//     details {
+//       cursor: pointer;
+//       border: 1px solid #e2e8f0;
+//       border-radius: 8px;
+//       padding: 0.8rem 1.2rem;
+//       background: #f7fafc;
+//       transition: all 0.3s;
+      
+//       &:hover {
+//         border-color: #cbd5e0;
+//         background: #ebf4ff;
+//       }
+      
+//       summary {
+//         font-weight: 600;
+//         color: #2b6cb0;
+//         outline: none;
+//         position: relative;
+//         padding-left: 25px;
+        
+//         &::before {
+//           content: "▶";
+//           position: absolute;
+//           left: 0;
+//           top: 0;
+//           font-size: 0.8em;
+//           transition: transform 0.3s;
+//         }
+        
+//         &:hover {
+//           color: #2c5282;
+//         }
+//       }
+      
+//       &[open] summary::before {
+//         transform: rotate(90deg);
+//       }
+      
+//       pre {
+//         margin-top: 1rem;
+//         padding: 1.2rem;
+//         background: #f1f5f9;
+//         border: 1px solid #e2e8f0;
+//         border-radius: 6px;
+//         font-size: 0.85rem;
+//         overflow-x: auto;
+//         white-space: pre-wrap;
+//         line-height: 1.6;
+//         font-family: 'Courier New', monospace;
+//       }
+//     }
+//   }
+  
+//   .publication-divider {
+//     margin: 2.5rem 0;
+//     border: 0;
+//     border-top: 1px dashed #cbd5e0;
+//   }
+  
+//   /* 响应式设计 */
+//   @media (max-width: 768px) {
+//     .publication-item {
+//       padding: 1.2rem;
+//     }
+    
+//     .publication-title {
+//       font-size: 1.15rem;
+//     }
+    
+//     .publication-abstract {
+//       padding: 1rem;
+//       font-size: 0.87rem;
+//     }
+//   }
+// }
