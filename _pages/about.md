@@ -35,7 +35,7 @@ My research focuses at the intersection of embodied intelligence and robotics, p
 <!-- ====== -->
 
 <!-- <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020. -->
-- **[Jun. 2025]** One paper on telerobotics is accepted by *IEEE RA-L*. 
+- **[Jul. 2025]** One paper on telerobotics is accepted by *IEEE RA-L*. 
 - **[Jun. 2025]** One paper is accepted by *IROS 2025*. 
 - **[Jun. 2025]** One paper on [tactile based mobile manipulation](https://ieeexplore.ieee.org/abstract/document/11030660/) is accepted by *IEEE TMECH*. 
 - **[May 2025]** One paper on tactile sensing is accepted by *Science Advances*.
