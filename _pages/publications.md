@@ -7,7 +7,16 @@ class: page-publications
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find a full list of my publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find a full list of my publications on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
+
+  注意：由于本人长期在产业界从事研发工作，此前发表的论文方向与课题组当前的研究重点有一定差异。因此，建议申请者在了解课题组时，可更多关注我们近期的研究主题与未来规划。
+  
+  本课题组主要研究方向包括但不限于：机器人操作（如视觉-语言-动作模型（VLA）、多模态世界模型、数据驱动方法）、机器人运动控制（如人形机器人、交互控制、自适应控制）以及人机交互等。
+  
+  如果你对以上方向有浓厚兴趣，并渴望在一个充满活力的团队中成长，欢迎随时通过邮件与我们联系。
+  </div>
+
+
 {% endif %}
 
 {% include base_path %}
