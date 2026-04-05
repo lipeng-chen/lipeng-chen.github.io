@@ -22,6 +22,8 @@ I envision a future where robots ​​possess​​ robust dexterity and physic
 
 **Join Us:** We are looking for talented PhD/master students, research assistants, interns, postdocs, engineers, and collaborators who share similar interest and passion in robotics and embodied intelligence. If you are interested in working with us, please feel free to drop me an email.
 
+**加入我们:** 本课题组长期招聘博士生、硕士生、研究助理、实习生、博士后、研发工程师等各类人才，并欢迎国内外合作者加入。我们致力于共同探索机器人与具身智能的前沿领域，研究方向包括但不限于：机器人操作（如视觉-语言-动作模型（VLA）、多模态世界模型、数据驱动方法）、机器人运动控制（如人形机器人、交互控制、自适应控制）以及人机交互等。如果你对以上方向有浓厚兴趣，并渴望在一个充满活力的团队中成长，欢迎随时通过邮件与我们联系。
+
 ## Research Interests
 
 My research focuses at the intersection of embodied intelligence and robotics, particularly the following areas:
@@ -31,14 +33,14 @@ My research focuses at the intersection of embodied intelligence and robotics, p
 - **Locomotion:** dynamics and model-based control, legged locomotion, loco-manipulation, etc.
 - **Human-Centered Robots:** human modeling, human-robot interaction, collaborative manipulation.  
 
-## News
+<!-- ## News -->
 <!-- ====== -->
 
-<!-- <!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020. -->
-- **[Jul. 2025]** One paper on telerobotics is accepted by *IEEE RA-L*. 
+
+<!-- - **[Jul. 2025]** One paper on telerobotics is accepted by *IEEE RA-L*. 
 - **[Jun. 2025]** One paper is accepted by *IROS 2025*. 
 - **[Jun. 2025]** One paper on [tactile based mobile manipulation](https://ieeexplore.ieee.org/abstract/document/11030660/) is accepted by *IEEE TMECH*. 
-- **[May 2025]** One paper on tactile sensing is accepted by *Science Advances*.
+- **[May 2025]** One paper on tactile sensing is accepted by *Science Advances*. -->
 
 
 <!-- Getting started
