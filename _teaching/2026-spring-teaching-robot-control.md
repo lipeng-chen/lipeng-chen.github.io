@@ -2,7 +2,7 @@
 title: "Foundation of Robot Control"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2026-autum-teaching-1
 venue: "SAI, SJTU"
 date: 2026-09-01
 location: "Shanghai, China"
